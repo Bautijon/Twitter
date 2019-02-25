@@ -18,6 +18,7 @@ The following **bonus** features are implemented:
 
 - [x] User can pull to refresh. (1pt)
 - [x] User can load past tweets infinitely. (2pts)
+- [x] User can see the profile's @
 
 ## Video Walkthrough
 
