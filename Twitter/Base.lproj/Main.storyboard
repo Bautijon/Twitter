@@ -89,6 +89,9 @@
                                                 <constraint firstAttribute="width" constant="30" id="Ls7-fl-w9k"/>
                                             </constraints>
                                             <state key="normal" image="favor-icon"/>
+                                            <connections>
+                                                <action selector="favoriteTweet:" destination="zeo-bL-3ud" eventType="touchUpInside" id="Fgl-bb-dxz"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJK-FL-jlI" userLabel="retweetButton">
                                             <rect key="frame" x="281" y="99" width="30" height="30"/>
@@ -97,6 +100,9 @@
                                                 <constraint firstAttribute="width" constant="30" id="zhc-Ge-n5j"/>
                                             </constraints>
                                             <state key="normal" title="Button" image="retweet-icon"/>
+                                            <connections>
+                                                <action selector="retweet:" destination="zeo-bL-3ud" eventType="touchUpInside" id="f8p-sG-g6P"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B76-KD-L1J">
                                             <rect key="frame" x="191" y="8" width="28" height="23.5"/>
@@ -130,7 +136,9 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="favButton" destination="egP-OK-n6A" id="iEu-6y-paF"/>
                                     <outlet property="profileImage" destination="Zrh-Gl-EcJ" id="juX-eE-pab"/>
+                                    <outlet property="retweetButton" destination="IJK-FL-jlI" id="x8b-eM-F1c"/>
                                     <outlet property="tweetContent" destination="OOo-6b-ljw" id="kGx-xk-gAj"/>
                                     <outlet property="userNameLabel" destination="ViR-CU-Kyr" id="sCR-O5-WEc"/>
                                     <outlet property="userSign" destination="B76-KD-L1J" id="qTi-SJ-NwM"/>
